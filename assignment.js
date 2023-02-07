@@ -32,9 +32,21 @@ function isLGSeven(num) {
 isLGSeven(14);
 
 // Fourth Problem
-function findingBadData() {
-
+function findingBadData(numbers) {
+    const negative = [];
+    let positive = 0;
+    
+    for(i = 0; i < numbers.length; i++) {
+        if(numbers[i] < 0) {
+            negative.push(numbers[i]);
+        }
+        else{
+            positive += numbers[i];
+        }
+    }
+    return negative;
 }
+console.log(findingBadData([1,3,5,-2,-5,-8,-54,-23,-5]));
 
 // Fifth Problem
 function gemsToDiamond(friend1, friend2, friend3) {
