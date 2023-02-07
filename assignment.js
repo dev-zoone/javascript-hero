@@ -1,9 +1,9 @@
 // First Problem
-function mindGame(num) {
-    let intoo = num * 3;
-    let pluse = intoo + 10;
-    let dividedMinuse = (pluse / 2) - 5;
-    return dividedMinuse;
+function mindGame(number) {
+    let multiNum = number * 3;
+    let addNum = multiNum + 10;
+    let devidMinus = (addNum / 2) - 5;
+    return devidMinus;
 }
 console.log(mindGame(5));
 
