@@ -1,15 +1,15 @@
 // First Problem
 function mindGame(number) {
-    let multiNum = number * 3;
-    let addNum = multiNum + 10;
-    let devidMinus = (addNum / 2) - 5;
+    const multiNum = number * 3;
+    const addNum = multiNum + 10;
+    const devidMinus = (addNum / 2) - 5;
     return devidMinus;
 }
 console.log(mindGame(5));
 
 // Second Problem
 function evenOdd(name) {
-    let count = name.length;
+    const count = name.length;
     if(count %2 == 0 && count %2 != 1) {
         console.log('Even');
     }
@@ -17,11 +17,11 @@ function evenOdd(name) {
         console.log('Odd');
     }
 }
-evenOdd('shakil ahmad');
+evenOdd('Shakil Ahmad');
 
 // Third Problem
-function isLGSeven(num) {
-    let minuse = num - 7;
+function isLGSeven(number) {
+    const minuse = number - 7;
     if(minuse < 7) {
         console.log(minuse);
     }
@@ -33,7 +33,7 @@ isLGSeven(14);
 
 // Fourth Problem
 function findingBadData(numbers) {
-    const negative = [];
+    let negative = [];
     let positive = 0;
     
     for(i = 0; i < numbers.length; i++) {
